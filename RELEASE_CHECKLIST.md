@@ -19,9 +19,7 @@ Do not publish the following to GitHub:
 Recommended GitHub contents:
 
 - `gfrc_full_impl/`
-- `baselines/`
 - `data_preprocessing/` scripts only
-- `experiments/` scripts and paper-oriented exporters
 - `ops/prepare_hf_dataset_release.py`
 - `ops/upload_hf_dataset.py`
 - `README.md`

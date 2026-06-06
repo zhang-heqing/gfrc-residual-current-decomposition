@@ -7,9 +7,8 @@ This repository accompanies the paper:
 It contains:
 
 - the main GFRC implementation
-- deterministic and probabilistic baseline implementations
 - data preprocessing and benchmark construction scripts
-- paper-oriented experiment and summarization scripts
+- release utilities for the public dataset package
 
 ## Overview
 
@@ -25,9 +24,8 @@ The repository is organized for reproducible experiments on the `SafeLeak-RCD` b
 ## Repository Structure
 
 - `gfrc_full_impl/`: main GFRC training, inference, and evaluation code
-- `baselines/`: baseline methods for the SafeLeak-RCD benchmark
 - `data_preprocessing/`: raw-to-CSV conversion, augmentation, and benchmark builders
-- `experiments/`: experiment runners, result summarizers, and paper-table exporters
+- `ops/`: release utilities for packaging and uploading the benchmark
 - `DATASET_CARD.md`: benchmark description and release notes
 - `OPEN_SOURCE_RELEASE.md`: code/data release workflow
 
@@ -42,13 +40,14 @@ The benchmark dataset is released separately from the GitHub code repository.
 
 The code repository is intended to hold code, documentation, and experiment logic. Large benchmark CSV payloads should be hosted through the dataset release rather than duplicated in GitHub.
 
+This public release focuses on the GFRC method and the supporting preprocessing and evaluation pipeline.
+
 ## Quickstart
 
 Install dependencies:
 
 ```bash
 pip install -r gfrc_full_impl/requirements.txt
-pip install -r baselines/requirements.txt
 ```
 
 Train GFRC on a released benchmark split:
@@ -57,21 +56,6 @@ Train GFRC on a released benchmark split:
 python gfrc_full_impl/train.py \
   --split-config /path/to/safeleak-rcd/benchmark/split_config.json \
   --output-dir training_runs/shanse001_rebuilt_entity_split
-```
-
-Run the baseline suite:
-
-```bash
-bash baselines/run_all_baselines.sh \
-  /path/to/safeleak-rcd/benchmark/split_config.json
-```
-
-Export main paper summaries:
-
-```bash
-python experiments/summarize_main_results.py
-python experiments/summarize_ablations.py
-python experiments/summarize_efficiency.py
 ```
 
 ## Benchmark Characteristics

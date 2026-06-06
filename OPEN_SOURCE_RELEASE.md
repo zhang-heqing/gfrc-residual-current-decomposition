@@ -2,7 +2,7 @@
 
 This project is prepared for a split release:
 
-- `GitHub`: code, experiment scripts, and release documentation
+- `GitHub`: code and release documentation
 - `Hugging Face Datasets`: benchmark CSV files and dataset metadata
 
 ## Recommended Repositories
@@ -25,9 +25,9 @@ Dataset repository on Hugging Face:
 Publish:
 
 - `gfrc_full_impl/`
-- `baselines/`
-- `experiments/`
 - `data_preprocessing/` scripts
+- `ops/prepare_hf_dataset_release.py`
+- `ops/upload_hf_dataset.py`
 - `README.md`
 - `DATASET_CARD.md`
 - `OPEN_SOURCE_RELEASE.md`
