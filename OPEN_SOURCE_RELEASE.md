@@ -2,7 +2,7 @@
 
 This project is prepared for a split release:
 
-- `GitHub`: code and release documentation
+- `GitHub`: GFRC code, preprocessing scripts, and release documentation
 - `Hugging Face Datasets`: benchmark CSV files and dataset metadata
 
 ## Recommended Repositories

@@ -1,8 +1,0 @@
-{
-  "methods": {
-    "GFRC": "training_runs/shanse001_rebuilt_round3_prefix005_weakaug",
-    "Deterministic-Physics": "training_runs/baselines_rerun_best_v1/deterministic_physics",
-    "TimeXer": "training_runs/baselines_rerun_best_v1/timexer",
-    "CVAE": "training_runs/baselines_rerun_best_v1/cvae"
-  }
-}

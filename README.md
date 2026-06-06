@@ -38,7 +38,7 @@ The benchmark dataset is released separately from the GitHub code repository.
 - URL: `https://huggingface.co/datasets/haayan/safeleak-rcd`
 - license: `CC-BY-NC-4.0`
 
-The code repository is intended to hold code, documentation, and experiment logic. Large benchmark CSV payloads should be hosted through the dataset release rather than duplicated in GitHub.
+The code repository is intended to hold code, documentation, and release utilities. Large benchmark CSV payloads should be hosted through the dataset release rather than duplicated in GitHub.
 
 This public release focuses on the GFRC method and the supporting preprocessing and evaluation pipeline.
 

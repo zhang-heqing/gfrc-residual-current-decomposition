@@ -10,7 +10,7 @@ Do not publish the following to GitHub:
 - private dataset copies under `gfrc_full_impl/data/*.csv`
 - local compiled paper artifacts such as `*.aux`, `*.bbl`, `*.blg`, `*.log`, `*.xdv`
 - local notes and handoff files such as `CODEX_HANDOFF_CONTEXT.md`, `revision_roadmap.md`, `审稿意见.docx`
-- server-side result snapshots under `experiments/server_results_snapshot/`
+- server-side result snapshots or temporary export folders
 - files containing machine-specific absolute paths
 - private checkpoints, training outputs, or local cache directories
 
@@ -40,7 +40,7 @@ Check the following manually:
 
 Use this split release:
 
-- GitHub: code, scripts, documentation
+- GitHub: GFRC code, preprocessing scripts, documentation
 - Hugging Face Datasets: benchmark CSVs, split metadata, processed manifest, dataset card
 
 ## 5. Final Publishing Steps
