@@ -1,0 +1,29 @@
+{
+  "methods": {
+    "GFRC": {
+      "run_dir": "training_runs/ablations_rerun_best_v1/gfrc_full",
+      "kind": "gfrc",
+      "stochastic": true
+    },
+    "w/o cue": {
+      "run_dir": "training_runs/ablations_rerun_best_v1/gfrc_no_cue",
+      "kind": "gfrc",
+      "stochastic": true
+    },
+    "w/o physics": {
+      "run_dir": "training_runs/ablations_rerun_best_v1/gfrc_no_physics",
+      "kind": "gfrc",
+      "stochastic": true
+    },
+    "Deterministic backbone": {
+      "run_dir": "training_runs/ablations_rerun_best_v1/deterministic_backbone",
+      "kind": "baseline",
+      "stochastic": false
+    },
+    "Deterministic + physics": {
+      "run_dir": "training_runs/ablations_rerun_best_v1/deterministic_physics",
+      "kind": "baseline",
+      "stochastic": false
+    }
+  }
+}
